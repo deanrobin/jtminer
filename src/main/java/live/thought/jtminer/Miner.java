@@ -355,9 +355,11 @@ public class Miner implements Observer
         }
       }
       // Wait a bit for some work
+
+      int time = 50;
       try
       {
-        Thread.sleep(1000);
+        Thread.sleep(time);
       }
       catch (InterruptedException e)
       {
